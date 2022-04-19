@@ -1,4 +1,3 @@
-@wip
 Feature: As a librarian, I want to know the amount of borrowed books
 
   Scenario Outline: verify the amount of borrowed books
@@ -15,9 +14,7 @@ Feature: As a librarian, I want to know the amount of borrowed books
       | librarian4@library | 3lwxJ1Kk |
       | librarian5@library | hj65YBiE |
       | librarian6@library | QaG7mkXA |
-
-
-#  librarian7@library	C5WUiPUP
+      | librarian7@library | C5WUiPUP |
 #  librarian8@library	UECJkTnl
 #  librarian9@library	MSx8u9n4
 #  librarian10@library	ZIkOcbCa

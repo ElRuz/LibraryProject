@@ -11,9 +11,6 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.sql.Connection;
-import java.util.concurrent.TimeUnit;
-
 public class US2 {
 
     LoginPages lp = new LoginPages();
