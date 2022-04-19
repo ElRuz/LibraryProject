@@ -23,5 +23,7 @@ public class BooksPage {
     @FindBy(xpath = "//td[.='2005']")
     public WebElement yearN;
 
+    @FindBy(xpath = "//select[@id='book_categories']")
+    public WebElement dropDown;
 
 }

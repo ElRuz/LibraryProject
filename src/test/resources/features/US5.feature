@@ -1,4 +1,3 @@
-@wip
 Feature: As a data consumer, I want UI and DB book information are match.
 
   Scenario Outline: Verify book information with DB

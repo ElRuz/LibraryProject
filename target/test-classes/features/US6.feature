@@ -1,10 +1,12 @@
-Feature: As a data consumer, I want UI and DB book information are match.
+@wip
+Feature: As a data consumer, I want UI and DB book categories match.
 
-  Scenario Outline: Verify book information with DB
+  Scenario Outline: verify book categories with DB
     Given User sends his info "<username>" and "<password>"
     And I navigate to "Books" page
-    When I open book "Chordeiles minor"
-    Then book information must match the Database
+    And I take all book categories in UI
+    And I execute a query to get book categories
+    Then verify book categories must match the book_categories table from DB.
 
     Examples:
       | username           | password |
