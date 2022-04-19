@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>18 Apr 2022, 20:36</td>
+      <td>18 Apr 2022, 21:22</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@wip</td>
-          <td      class="passed"    >3</td>
+          <td      class="passed"    >4</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">3</td>
+          <td class="total">4</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="747410100">0.747</td>
+          <td class="duration" data-value="5739368100">5.739</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -171,7 +171,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_2467776680.html">As a librarian, I want to know the genre of books are being borrowed the most</a>
+      <a href="report-feature_3147835050.html">As a data consumer, I want UI and DB book information are match.</a>
     </div>
 
 
@@ -181,14 +181,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.747</span>
+  <span class="lead-duration duration">5.739</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">verify the common book genre that&rsquo;s being borrowed</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify book information with DB</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -219,7 +219,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.amazon.step_definitions.Hooks.setup()</span>
 
-  <span class="lead-duration duration">1.339</span>
+  <span class="lead-duration duration">1.022</span>
 
           </div>
 
@@ -254,9 +254,36 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">Establish the database connection</span>
+  <span class="name">User sends his info <span class="argument">&quot;librarian1@library&quot;</span> and <span class="argument">&quot;qU9mrvur&quot;</span></span>
 
-  <span class="lead-duration duration">0.631</span>
+  <span class="lead-duration duration">3.858</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I navigate to <span class="argument">&quot;Books&quot;</span> page</span>
+
+  <span class="lead-duration duration">0.739</span>
 
 </div>
 
@@ -281,9 +308,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I execute a query to find the most popular book genre</span>
+  <span class="name">I open book <span class="argument">&quot;Chordeiles minor&quot;</span></span>
 
-  <span class="lead-duration duration">0.115</span>
+  <span class="lead-duration duration">1.044</span>
 
 </div>
 
@@ -308,9 +335,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">verify that Classic is the most popular book genre</span>
+  <span class="name">book information must match the Database</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.096</span>
 
 </div>
 
@@ -355,7 +382,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.amazon.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.648</span>
 
           </div>
 

@@ -14,4 +14,7 @@ public class MainLibraryPage {
     @FindBy(xpath = "//*[@id='borrowed_books']")
     public WebElement borrowedBooksNumber;
 
+    @FindBy(xpath = "//*[@id='menu_item']/li[3]/a")
+    public WebElement booksTab;
+
 }
