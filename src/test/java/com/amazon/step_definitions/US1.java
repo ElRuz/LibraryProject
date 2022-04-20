@@ -5,7 +5,8 @@ import com.amazon.utilities.DB_Util;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
+
 import java.util.List;
 
 public class US1 {
@@ -27,7 +28,7 @@ public class US1 {
     public void verify_all_users_has_unique_id() {
         DB_Util.runQuery("SELECT DISTINCT count('id') FROM users");
         distinctIDsCount = Integer.parseInt(DB_Util.getFirstRowFirstColumn());
-        Assert.assertEquals(expectedIDsCount, distinctIDsCount);
+        Assertions.assertEquals(expectedIDsCount, distinctIDsCount);
     }
 
     @When("Execute query to get all columns")
@@ -39,7 +40,6 @@ public class US1 {
     public void verify_the_below_columns_are_listed_in_result(List<String> actualList) {
         System.out.println("actualList = " + actualList);
         System.out.println("expectedList = " + expectedList);
-        Assert.assertEquals(expectedList, actualList);
+        Assertions.assertEquals(expectedList, actualList);
     }
-
 }

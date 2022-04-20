@@ -3,7 +3,6 @@ import com.amazon.utilities.ConfigurationReader;
 import com.amazon.utilities.DB_Util;
 import com.amazon.utilities.Driver;
 import io.cucumber.java.After;
-import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
